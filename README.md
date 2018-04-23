@@ -18,7 +18,7 @@ Here are the various containers involved.
 
 ## Usage
 
-Follow the steps below.
+Follow the steps below. If you don't want any backups, just remove the `backups:` section in `docker-compose.yml`, jump to step 2, and ignore the instructions related to Backblaze B2.
 
 ### Step 1: Create a Backblaze account and bucket
 
