@@ -51,7 +51,7 @@ Run:
 $ docker-compose up -d
 ```
 
-You'll need to wait a few minutes on firts launch, as there is some certificate generation involved. Then, you should be able to access your Nextcloud instance!
+You'll need to wait a few minutes on first launch, as there is some certificate generation involved. Then, you should be able to access your Nextcloud instance!
 
 ![](screenshot.png)
 
