@@ -6,6 +6,16 @@ This repository contains a Docker compose file which can be used to easily creat
 - Automatic SSL certificate issuance and renewal (using [`nginx-proxy-letsencrypt-companion`](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion))
 - Automated encrypted backups to [Backblaze B2](https://www.backblaze.com/b2/cloud-storage.html) using [`duplicacy-autobackup`](https://github.com/christophetd/duplicacy-autobackup). Can be customized to use any storage backend supported by duplicacy (S3, Hubic, etc.).
 
+## Architecture
+
+Here are the various containers involved.
+
+- `nextcloud`: the actual Nextcloud server
+- `mysql`: the database used by Nextcloud to store its configuration
+- `reverse-proxy`: a nginx reverse proxy in front of Nextcloud and doing SSL termination
+- `letsencrypt-companion`: an utility container which issues and renews SSL certificates
+- `backups`: an utility container which regularly backups the Nextcloud files and database
+
 ## Usage
 
 Follow the steps below.
